@@ -1,0 +1,64 @@
+.loading-pane {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loading-circle {
+    -fx-fill: #ffffff;
+}
+
+.loading-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+}
+
+.custom-button {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 10px;
+    -fx-pref-width: 100px;
+    -fx-padding: 5px; /* Add padding to accommodate longer text */
+    -fx-text-overrun: ellipsis; /* Show ellipsis (...) for text that doesn't fit */
+    -fx-alignment: center; /* Center-align the text */
+}
+
+.custom-button:hover {
+    -fx-background-color: #45a049; /* Darker green */
+    -fx-text-overrun: clip; /* Clip the text instead of showing ellipsis */
+}
+
+.custom-button:pressed {
+    -fx-background-color: #3e8e41; /* Even darker green */
+}
+
+.header {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-background-color: #f0f0f0;
+    -fx-alignment: center;
+    -fx-font-size: 14px;
+}
+
+.header Label {
+    -fx-font-weight: bold;
+}
+
+.header Button {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.header Button:hover {
+    -fx-background-color: #45a049; /* Darker green */
+}
+
+.header Button:pressed {
+    -fx-background-color: #3e8e41; /* Even darker green */
+}
+
+.header TextField,
+.header ComboBox {
+    -fx-pref-width: 150px;
+}

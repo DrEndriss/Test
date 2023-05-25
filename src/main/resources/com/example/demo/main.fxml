@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.ToggleButton?>
+<BorderPane fx:id="layout" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.example.demo.ApplicationController">
+    <top>
+        <HBox fx:id="header" styleClass="header">
+            <Label text="Filter:" />
+            <ComboBox fx:id="filterComboBox" promptText="Wählen Sie eine Spalte" />
+            <TextField fx:id="filterTextField" promptText="Suche" />
+            <Button fx:id="searchButton" text="Search" />
+            <Button fx:id="resetButton" text="Reset" />
+            <Button fx:id="exportButton" text="Export zu CSV" />
+            <Button fx:id="exportButtonExcel" text="Export zu Excel" onAction="#handleExportToExcel" />
+            <Button fx:id="refreshButton" text="Aktualisiere Daten" onAction="#handleRefresh"  />
+            <Label fx:id="notificationLabel" />
+        </HBox>
+
+    </top>
+    <center>
+        <TableView fx:id="table" prefWidth="800" prefHeight="600"/>
+    </center>
+</BorderPane>
